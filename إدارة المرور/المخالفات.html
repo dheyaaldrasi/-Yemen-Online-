@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>المخالفات | إدارة المرور - اليمن</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="top">
+      <div class="brand">
+        <div class="logo">🚦</div>
+        <div>
+          <h1>الإدارة العامة للمرور</h1><small>الجمهورية اليمنية — بوابة الخدمات الإلكترونية</small>
+        </div>
+      </div>
+      <a class="login" href="#">تسجيل الدخول</a>
+    </div>
+    <nav class="nav">
+      <div class="nav-inner"><a class="" href="الرئيسية.html">الرئيسية</a><a class="" href="الترخيص.html">رخص
+          القيادة</a><a class="" href="المركبة.html">المركبات</a><a class="active"
+          href="المخالفات.html">المخالفات</a><a class="" href="لوحات المركبة.html">اللوحات</a><a class=""
+          href="الملكية.html">نقل الملكية</a></div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a class="back" href="الرئيسية.html">← العودة للخدمات</a>
+    <div class="page-title">
+      <h2>المخالفات المرورية</h2>
+      <p>الاستعلام عن المخالفات المسجلة على المركبة</p>
+    </div>
+    <div class="form-box">
+      <form>
+        <div class="form-grid">
+          <div class="field"><label>طريقة البحث</label><select required>
+              <option>رقم اللوحة</option>
+              <option>رقم الرخصة</option>
+              <option>رقم البطاقة الشخصية</option>
+            </select></div>
+          <div class="field"><label>رقم البحث</label><input required placeholder="أدخل الرقم"></div>
+          <div class="field"><label>رقم اللوحة</label><input placeholder="إن وجد"></div>
+          <div class="field"><label>المحافظة</label><select>
+              <option>صنعاء</option>
+              <option>عدن</option>
+              <option>تعز</option>
+              <option>إب</option>
+              <option>حضرموت</option>
+              <option>أخرى</option>
+            </select></div>
+          <div class="field full"><label>الفترة</label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><input type="date"><input type="date">
+            </div>
+          </div>
+        </div>
+        <div class="note">بعد الربط بقاعدة البيانات يمكن عرض: رقم المخالفة، تاريخها، مكانها، نوع المخالفة، قيمة الغرامة،
+          حالة السداد، وخيار السداد الإلكتروني إذا كان متاحاً في النظام.</div>
+        <div class="form-actions"><button class="btn">استعلام</button></div>
+        <div class="result"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>بوابة الخدمات الإلكترونية للمرور</strong><br><small>خدمات مرورية إلكترونية للمواطنين</small></div>
+      <small>© 2026 إدارة المرور — نموذج مشروع ويب</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>

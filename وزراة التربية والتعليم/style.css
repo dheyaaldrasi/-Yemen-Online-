@@ -1,0 +1,333 @@
+:root {
+    --primary-dark: #0f254b;
+    --primary-blue: #1c3a6b;
+    --bg-color: #f5f7f9;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #ffffff;
+    --border-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* الترويسة وشريط التنقل */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--white);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 60px;
+}
+
+.logo-area h1 {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+}
+
+.logo-area p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.btn-login {
+    background-color: #e8eaf6;
+    color: var(--primary-dark);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-nav {
+    background-color: var(--primary-dark);
+    padding: 0 50px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: var(--white);
+    padding: 15px 0;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.main-nav .active {
+    border-bottom: 3px solid #64b5f6;
+    font-weight: bold;
+}
+
+/* منطقة البانر */
+.hero-section {
+    position: relative;
+    background: linear-gradient(to right ,rgba(208, 211, 218, 0.85), rgba(5, 35, 87, 0.85)), url(images/مدرسة.jpg) center/cover;
+    color: var(--white);
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-icon {
+    font-size: 3rem;
+    color: #64b5f6;
+}
+
+/* شبكة الخدمات (الصفحة الرئيسية) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 50px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.5s ease-in-out;
+}
+.service-card:hover{
+    transform: translateY(-13px);
+    border-color: rgb(0, 0, 0);
+}
+.service-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #5c6bc0;
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.btn-enter {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-enter:hover {
+    background-color: #5c6bc0;
+}
+
+/* صفحات الخدمات (النماذج) */
+.breadcrumb {
+    padding: 15px 50px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.breadcrumb a {
+    color: var(--primary-blue);
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    /* display:flex; */
+    /* -ms-flex: 20px; */
+    /* flex-wrap:wrap ; */
+    gap: 20px;
+    padding: 0 50px 40px 50px;
+}
+
+.form-area {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form-header h3 {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+}
+
+.form-header i {
+    font-size: 3rem;
+    color: #5c6bc0;
+}
+
+.form-grid {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+}
+
+.input-group label span {
+    color: red;
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.alert-info {
+    grid-column: 1 / -1;
+    background-color: #e3f2fd;
+    color: #1565c0;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    flex: 2;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-reset {
+    flex: 1;
+    background-color: var(--white);
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* الشريط الجانبي والتذييل */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.side-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.side-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.side-card p,
+.side-card ul {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+.footer-links a {
+    color: var(--white);
+    margin: 0 10px;
+}

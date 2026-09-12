@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f8f9fa;
+    direction: rtl;
+}
+    /* <!-- header الشعار الضغطه و القائمه --> */
+/* ************************************************************************* */
+.header-content{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    padding: 10px 0;
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+.logo-text h1{
+    font-size: 1.2rem;
+    color: #1a365d;
+    margin-bottom: 2px;
+    
+}
+.logo-text span{
+    font-size: 0.8rem;
+    color: #718096;
+}
+
+.top-login{
+    background-color: #e2e8f0;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav{
+    background-color: #0f2942;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    color: white;
+    /* margin-top: 10px; */
+    text-align: center;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+.active{
+    margin-right: 120px;
+}
+.nav a:hover,.nav a.active:hover{
+    background-color: #1e40af;
+}
+
+/* ******************************************************* */
+
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    
+}
+
+.banner-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.overlay{
+background: linear-gradient(to right,
+    rgba(15,41,66,0)0%,
+    rgba(9, 29, 80, 1.99)100%); 
+position: absolute;
+top: 0;
+right: 0;
+width: 100%;
+height: 100%;
+z-index: 2;
+display: flex;
+align-items: center;
+justify-content: right;
+text-align: right;
+}
+
+.overlay h2{
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 15px;
+    margin-right: 100px;
+}
+.overlay p{
+    margin-right: 120px;
+    margin-bottom: 15px;
+    color: #718096;
+
+}
+
+.hero{
+    display: inline-block;
+    color: #718096;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.hero-1{
+    display: inline-block;
+    color: #718096;
+    text-decoration: none;
+    margin-right: 150px;
+    margin-bottom: 15px;
+}
+/* ******************************************************************** */
+.div-card{
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    gap: 3%;
+    grid-template-columns: repeat(3,1fr);
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 27%;
+    margin-top: 25px;
+    margin-right: 55px;
+    /* box-sizing: border-box; */
+}
+.card:hover{
+    transition : transfromY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.img-card{
+    margin: 10px 70px 10px 10px;
+    background-color: #e2e8f0;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+}
+.img-card img{
+    width: 60px;
+    height: 65px;
+    border-radius: 3px;
+}
+
+.text-card h3{
+    margin: 0 30px 5px 0;
+    font-size: 1.1rem;
+    color: #1a252f;
+}
+.text-card p{
+    margin: 0 25px 15px 0;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+.a-card{
+    width: 150px;
+    display: block;
+    background-color: #0f2a4a;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    margin-right: 25px;
+}
+
+.a-card:hover{
+    background-color: #163a66;
+}
+
+/* **************************************************************** */
+.footer{
+    background-color: #0f2942;
+    width: 100%;
+    height: 35px;
+    
+    /* max-width: 1200px; */
+    position: sticky;
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.text-footer{
+    text-align: center;
+    color: #f8f9fa;
+    font-size: 13px;
+    padding-top: 6px;
+}
+
+/* ****************************** icons ******************************************* */
+.card > .img-card > .bi{
+    font-size: 65px;
+    
+}
+/* *************************************************************************************** */
+
+
+.div-main-Input{
+    display: inline;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #1e40af;
+    font-size: 22px;
+}

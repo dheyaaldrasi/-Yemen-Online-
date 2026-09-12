@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>اللوحات | إدارة المرور - اليمن</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="top">
+      <div class="brand">
+        <div class="logo">🚦</div>
+        <div>
+          <h1>الإدارة العامة للمرور</h1><small>الجمهورية اليمنية — بوابة الخدمات الإلكترونية</small>
+        </div>
+      </div>
+      <a class="login" href="#">تسجيل الدخول</a>
+    </div>
+    <nav class="nav">
+      <div class="nav-inner"><a class="" href="الرئيسية.html">الرئيسية</a><a class="" href="الترخيص.html">رخص
+          القيادة</a><a class="" href="المركبة.html">المركبات</a><a class="" href="المخالفات.html">المخالفات</a><a
+          class="active" href="لوحات المركبة.html">اللوحات</a><a class="" href="الملكية.html">نقل الملكية</a></div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a class="back" href="الرئيسية.html">← العودة للخدمات</a>
+    <div class="page-title">
+      <h2>خدمات اللوحات</h2>
+      <p>طلبات اللوحات ضمن نموذج بوابة المرور</p>
+    </div>
+    <div class="form-box">
+      <form>
+        <div class="form-grid">
+          <div class="field"><label>نوع الخدمة</label><select required>
+              <option value="">اختر الخدمة</option>
+              <option>إصدار لوحة</option>
+              <option>بدل فاقد</option>
+              <option>بدل تالف</option>
+              <option>تجديد بيانات اللوحة</option>
+              <option>الاستعلام عن اللوحة</option>
+            </select></div>
+          <div class="field"><label>رقم اللوحة الحالية</label><input></div>
+          <div class="field"><label>اسم المالك</label><input required></div>
+          <div class="field"><label>رقم البطاقة الشخصية</label><input required></div>
+          <div class="field"><label>رقم الهاتف</label><input type="tel"></div>
+          <div class="field"><label>نوع المركبة</label><select>
+              <option>سيارة</option>
+              <option>دراجة نارية</option>
+              <option>نقل</option>
+              <option>أخرى</option>
+            </select></div>
+          <div class="field"><label>المحافظة</label><select>
+              <option>صنعاء</option>
+              <option>عدن</option>
+              <option>تعز</option>
+              <option>إب</option>
+              <option>أخرى</option>
+            </select></div>
+          <div class="field"><label>سبب الطلب</label><select>
+              <option>جديدة</option>
+              <option>فاقد</option>
+              <option>تالف</option>
+              <option>تعديل بيانات</option>
+            </select></div>
+          <div class="field full"><label>تفاصيل إضافية</label><textarea></textarea></div>
+        </div>
+        <div class="form-actions"><button class="btn">إرسال الطلب</button></div>
+        <div class="result"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>بوابة الخدمات الإلكترونية للمرور</strong><br><small>خدمات مرورية إلكترونية للمواطنين</small></div>
+      <small>عرفات الورافي 2026</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>

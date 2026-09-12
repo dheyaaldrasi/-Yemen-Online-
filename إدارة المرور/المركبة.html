@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>المركبات | إدارة المرور - اليمن</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="top">
+      <div class="brand">
+        <div class="logo">🚦</div>
+        <div>
+          <h1>الإدارة العامة للمرور</h1><small>الجمهورية اليمنية — بوابة الخدمات الإلكترونية</small>
+        </div>
+      </div>
+      <a class="login" href="#">تسجيل الدخول</a>
+    </div>
+    <nav class="nav">
+      <div class="nav-inner"><a class="" href="الرئيسية.html">الرئيسية</a><a class="" href="الترخيص.html">رخص
+          القيادة</a><a class="active" href="المركبة.html">المركبات</a><a class=""
+          href="المخالفات.html">المخالفات</a><a class="" href="لوحات المركبة.html">اللوحات</a><a class=""
+          href="الملكية.html">نقل الملكية</a></div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a class="back" href="الرئيسية.html">← العودة للخدمات</a>
+    <div class="page-title">
+      <h2>خدمات المركبات وكرت السيارة</h2>
+      <p>تسجيل أو تجديد بيانات المركبة والاستعلام عنها</p>
+    </div>
+    <div class="form-box">
+      <form>
+        <div class="form-grid">
+          <div class="field"><label>نوع الخدمة</label><select required>
+              <option value="">اختر الخدمة</option>
+              <option>تجديد كرت السيارة</option>
+              <option>استعلام عن المركبة</option>
+              <option>تسجيل مركبة</option>
+              <option>بدل فاقد / تالف</option>
+            </select></div>
+          <div class="field"><label>رقم اللوحة</label><input required placeholder="رقم اللوحة"></div>
+          <div class="field"><label>اسم المالك</label><input required></div>
+          <div class="field"><label>رقم البطاقة الشخصية</label><input required></div>
+          <div class="field"><label>رقم الهاتف</label><input type="tel"></div>
+          <div class="field"><label>المحافظة</label><select>
+              <option>صنعاء</option>
+              <option>عدن</option>
+              <option>تعز</option>
+              <option>إب</option>
+              <option>حضرموت</option>
+              <option>الحديدة</option>
+              <option>أخرى</option>
+            </select></div>
+          <div class="field"><label>رقم الهيكل (الشاصي)</label><input></div>
+          <div class="field"><label>رقم المحرك</label><input></div>
+          <div class="field"><label>نوع المركبة</label><select>
+              <option>خصوصي</option>
+              <option>أجرة</option>
+              <option>نقل</option>
+              <option>دراجة نارية</option>
+              <option>أخرى</option>
+            </select></div>
+          <div class="field"><label>الماركة / الصنع</label><input placeholder="Toyota / Hyundai ..."></div>
+          <div class="field"><label>موديل السنة</label><input type="number" min="1900" max="2100"></div>
+          <div class="field"><label>لون المركبة</label><input></div>
+        </div>
+        <div class="note">يمكن لاحقاً ربط هذه الصفحة بجدول Vehicles في قاعدة البيانات مع جدول Owners للعلاقة بين المالك
+          والمركبة.</div>
+        <div class="form-actions"><button class="btn">إرسال الطلب</button></div>
+        <div class="result"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>بوابة الخدمات الإلكترونية للمرور</strong><br><small>خدمات مرورية إلكترونية للمواطنين</small></div>
+      <small>© 2026 إدارة المرور — نموذج مشروع ويب</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>

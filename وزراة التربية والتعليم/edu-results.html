@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>الاستعلام عن النتائج</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="logo-area">
+            <img
+                src="images/Yemen.png">
+            <div>
+                <h1>بوابة الخدمات الحكومية الالكترونية</h1>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">وزارة التربية والتعليم</a></li>
+        </ul>
+    </nav>
+
+    <div class="breadcrumb"><a href="index.html">الرئيسية</a> > <span>الاستعلام عن نتائج الطلاب</span></div>
+
+    <main class="service-container">
+        <div class="form-area">
+            <div class="form-header">
+                <div>
+                    <h3>الاستعلام عن نتائج الطلاب</h3>
+                    <p>ابحث عن نتيجتك بواسطة رقم الجلوس.</p>
+                </div>
+                <i class="fa-solid fa-square-poll-vertical"></i>
+            </div>
+            <form class="form-grid">
+                <div class="input-group">
+                    <label>رقم الجلوس <span>*</span></label>
+                    <input type="number" placeholder="أدخل رقم الجلوس الخاص بك" required>
+                </div>
+                <div class="input-group">
+                    <label>العام الدراسي <span>*</span></label>
+                    <select>
+                        <option>2025 - 2026</option>
+                        <option>2024 - 2025</option>
+                        <option>2023 - 2024</option>
+                        <option>2022 - 2023</option>
+                        <option>2021 - 2022</option>
+                        <option>2020 - 2021</option>
+                        <option>2019 - 2020</option>
+                        <option>2018 - 2019</option>
+                    </select>
+                </div>
+                <div class="input-group full-width">
+                    <label>الشهادة <span>*</span></label>
+                    <select>
+                        <option>الثانوية العامة - القسم العلمي</option>
+                        <option>الثانوية العامة - القسم الأدبي</option>
+                        <option>تاسع أساسي</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">عرض النتيجة <i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+        </div>
+        <aside class="sidebar">
+            <div class="side-card">
+                <h4><i class="fa-solid fa-triangle-exclamation"></i> تنويه</h4>
+                <p>هذه النتائج أولية، والنسخة الورقية المعتمدة تصدر من المدرسة.</p>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>

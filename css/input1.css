@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f8f9fa;
+    direction: rtl;
+}
+    /* <!-- header الشعار الضغطه و القائمه --> */
+/* ************************************************************************* */
+.header-content{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    padding: 10px 0;
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+.logo-text h1{
+    font-size: 1.2rem;
+    color: #1a365d;
+    margin-bottom: 2px;
+    
+}
+.logo-text span{
+    font-size: 0.8rem;
+    color: #718096;
+}
+
+.top-login{
+    background-color: #e2e8f0;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav{
+    background-color: #0f2942;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    color: white;
+    /* margin-top: 10px; */
+    text-align: center;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+.active{
+    margin-right: 120px;
+}
+.nav a:hover,.nav a.active:hover{
+    background-color: #1e40af;
+}
+
+/* ******************************************************* */
+
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    
+}
+
+.banner-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.overlay{
+background: linear-gradient(to right,
+    rgba(15,41,66,0)0%,
+    rgba(9, 29, 80, 1.99)100%); 
+position: absolute;
+top: 0;
+right: 0;
+width: 100%;
+height: 100%;
+z-index: 2;
+display: flex;
+align-items: center;
+justify-content: right;
+text-align: right;
+}
+
+.overlay h2{
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 15px;
+    margin-right: 100px;
+}
+
+.hero{
+    display: inline-block;
+    color: #718096;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.hero-1{
+    display: inline-block;
+    color: #718096;
+    text-decoration: none;
+    margin-right: 150px;
+    margin-bottom: 15px;
+}
+/* ******************************************************************* */
+.steps{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 1100px;
+    direction: ltr;
+}
+
+.active{
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+.active span{
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b8c1cc;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #1c2f46;
+}
+.bi-person{
+    font-size: 14px;
+    color: #718096;
+}
+.active>.span1{
+    background: #2296e6;
+    color: white;
+    border-color: #2296e6;
+}
+.active p{
+    margin-top: 8px;
+    color: #344054;
+    font-size: 14px;
+}
+
+.form-content{
+    width: 100%;
+    
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    direction: ltr;
+}
+.form{
+    flex: 1;
+    width: 100%;
+}
+
+.sidebar{
+    width: 280px;
+}
+
+.form-card{
+    margin-top: 15px;
+    background: white;
+    border: 1px solid #e1e5ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.form-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-title h2{
+    font-size: 18px;
+    color: #172b4d;
+    margin-left: 860px;
+}
+.form-title span{
+    width: 40px;
+    height: 40px;
+    background: #f0f3f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-grid{
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px ;
+    padding: 30px ;
+    direction: rtl;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input{
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #26364a;
+    display: flex ;
+    /* width: 100% ; */
+    flex-direction: column ; 
+}
+.input label{
+    margin-bottom: 5px;
+}
+
+.input p{
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.input input, .input select{
+    height: 40px;
+    border: 1px solid #d5dbe2;
+    border-radius: 5px;
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+    /* width: 100%; */
+    box-sizing: border-box;
+}
+.input input:focus, .input select:focus{
+    border-color: #1d9bf0;
+}
+
+.form-buttons{
+    border-top: 1px solid #eee;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.form-buttons button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.form-buttons button a{
+    text-decoration: none;
+    color:#eee ;
+}
+.cansel{
+    background: white;
+    border: 1px solid #cbd2d9;
+}
+.next{
+    background: #102f50;
+    color: white;
+    border: none;
+}
+.next:hover{
+    background: white;
+    border: 1px solid #cbd2d9;
+}
+.form-buttons button a:hover{
+    color: black;
+}
+/* **************************************************** */
+
+.info-card{
+    border: 1px solid #e1e5ea;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    margin-bottom: 15px;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.info-card h3{
+    color: #172b4d;
+    margin-bottom: 25px;
+}
+.info-card > .card-h3{
+    color: #120374;
+    margin-bottom: 25px;
+    text-align: center;
+    display: inline;
+}
+.card-ul{
+    margin-top: 5px;
+    color: #393c44;
+    font-size: 16px;
+    text-align: right;
+    direction: rtl;
+}
+.info-card .bi{
+    margin-bottom: 25px;
+    color: #120374;
+}
+.info-card h4{
+    color: #172b4d;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.button-info-card{
+    margin: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 1px solid #8c96ab;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+.button-info-card p{
+    color: #120374;
+}
+.info-card p{
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-right: 15px;
+}
+.help{
+    border: 1px solid #e1e5ea;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: right;
+    background: white;
+    
+}
+.help h3{
+    text-align: right;
+    color: #172b4d;
+}
+.help p{
+    color: #667085;
+    line-height: 1.8;
+}
+
+.help strong{
+    display: block;
+    font-size: 24px;
+    color: #172b4d;
+    margin-top: 15px;
+}
+/* *************************************************** */
+.footer{
+    background-color: #0f2942;
+    width: 100%;
+    height: 35px;
+    
+    /* max-width: 1200px; */
+    position: sticky;
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.text-footer{
+    text-align: center;
+    color: #f8f9fa;
+    font-size: 13px;
+    padding-top: 6px;
+}
+/* ************************************************************** */
+/* صفات حق صفحه المرفقات */
+.form-grid-box{
+    margin-bottom: 30px;
+    text-align: right;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.form-grid-box label:first-child{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.form-grid-box span{
+    color: rgb(11, 11, 11);
+}
+.form-grid-box p{
+    color: #777;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.upload-box{
+    height: 150px;
+    border: 2px dashed #cbd2dc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+.upload-box:hover{
+    background-color: #f5f7fa;
+}
+.upload-box input{
+    display: none;
+}
+.upload-box span{
+    color: #0d2d4d;
+    font-size: 35px;
+}
+.form-card > .input{
+    text-align: right;
+    font-size: 16px;
+} 
+/* ****************************** icons ******************************************* */
+.bi{
+    font-size: 20px; 
+    display: inline;
+}
+
+/* *********************************************************************** */
+textarea{
+    border-radius: 7px;
+    color: #667085;
+}
+
+/* ********************************** نوع الطلب حق نرخيص المحلات ******************************** */
+.request-type {
+    direction: rtl;
+}
+
+.request-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.request-card {
+    
+    position: relative;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.request-card input {
+    display: none;
+}
+
+
+.request-card i {
+    font-size: 40px;
+    color: #12365d;
+}
+
+
+
+.request-card h3 {
+    color: #12365d;
+    margin: 15px 0 8px;
+}
+
+
+.request-card p {
+    color: #777;
+}
+
+/* عند اختيار المربع */
+.request-card:has(input:checked) {
+    border: 2px solid #1d64c8;
+    background-color: #f0f6ff;
+}
+
+/* دائرة الاختيار */
+.request-card::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+}
+
+
+.request-card:has(input:checked)::after {
+    border: 5px solid #1d64c8;
+}
+.request-type {
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+.request-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.request-card {
+    width: 100%;
+    min-height: 220px;
+    box-sizing: border-box;
+}
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>استخراج شهادة دراسية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="logo-area">
+            <img src="images/Yemen.png" alt="الشعار">
+            <div>
+                <h1>بوابة الخدمات الحكومية الالكترونية</h1>
+                <p>الجمهورية اليمنية</p>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">وزارة التربية والتعليم</a></li>
+        </ul>
+    </nav>
+
+    <div class="breadcrumb"><a href="index.html">الرئيسية</a> > <span>استخراج شهادة دراسية</span></div>
+
+    <main class="service-container">
+        <div class="form-area">
+            <div class="form-header">
+                <div>
+                    <h3>استخراج شهادة دراسية</h3>
+                    <p style="color: var(--text-light);">تقديم طلب استخراج شهادة دراسية إلكترونياً بدل فاقد أو تالف.</p>
+                </div>
+                <i class="fa-solid fa-certificate"></i>
+            </div>
+            <form class="form-grid">
+                <div class="input-group full-width">
+                    <label>الاسم الكامل <span>*</span></label>
+                    <input type="text" placeholder="الاسم الرباعي كما هو في السجلات" required>
+                </div>
+                <div class="input-group">
+                    <label>الرقم الوطني <span>*</span></label>
+                    <input type="number" placeholder="أدخل الرقم الوطني" required>
+                </div>
+                <div class="input-group">
+                    <label>المرحلة الدراسية <span>*</span></label>
+                    <select>
+                        <option>أساسي</option>
+                        <option>ثانوي</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>العام الدراسي للتخرج <span>*</span></label>
+                    <select>
+                        <option>2025 - 2026</option>
+                        <option>2024 - 2025</option>
+                        <option>2023 - 2024</option>
+                        <option>2022 - 2023</option>
+                        <option>2021 - 2022</option>
+                        <option>2020 - 2021</option>
+                        <option>2019 - 2020</option>
+                        <option>2018 - 2019</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>المدرسة <span>*</span></label>
+                    <input type="text" placeholder="اسم المدرسة التي تخرجت منها" required>
+                </div>
+                <div class="alert-info"><i class="fa-solid fa-bell"></i> سيتم إشعارك برسالة نصية عند جاهزية الشهادة.
+                </div>
+                <div class="form-actions">
+                    <button type="reset" class="btn-reset">إعادة تعيين <i class="fa-solid fa-rotate"></i></button>
+                    <button type="submit" class="btn-submit">إرسال الطلب <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+        <aside class="sidebar">
+            <div class="side-card">
+                <h4><i class="fa-solid fa-circle-info"></i> عن الخدمة</h4>
+                <p>تتيح استخراج نسخة رسمية من الشهادة.</p>
+            </div>
+            <div class="side-card">
+                <h4><i class="fa-solid fa-money-bill"></i> رسوم الخدمة</h4>
+                <p>2000 ريال تُدفع عند الاستلام.</p>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>
