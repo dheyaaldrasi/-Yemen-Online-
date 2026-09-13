@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقديم شكوى - بوابة الخدمات الحكومية الالكترونية</title>
+    <link rel="stylesheet" href="../../bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../css/input1.css">
+</head>
+<body>
+
+    <!-- header الشعار الضغطه و القائمه -->
+    <header class="header">
+        <div class="header-content">
+
+            <div class="header-img-text">
+                <img src="../../images/Yemen.png" alt="شعار الجمهوريه اليمنيه" class="logo">
+                <div class="logo-text">
+                    <h1>بوابة الخدمات الحكومية الالكترونية</h1>
+                    <span>الجمهورية اليمنية</span>
+                </div>
+
+            </div>
+            <div class="actions">
+                <button class="top-login">تسجيل الدخول</button>
+
+            </div>
+
+        </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../../index.html" class="active">الرئيسية</a></li>
+                        <li><a href="../../الاحوال المدنية/main.html">الاحوال المدنية</a></li>
+                        <li><a href="../../البلدية/main2.html">البلدية</a></li>
+                        <li><a href="../../إدارة المرور/الرئيسية.html">ادارة المرور</a></li>
+                        <li><a href="../../وزراة التربية والتعليم/index.html">وزارة التربية والتعليم</a></li>
+                        <li><a href="../../main_index.html">وزارة الداخلية</a></li>
+                        <li><a href="../index.html">الشكاوي</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <!-- ******************************************** -->
+    <section class="banner">
+        <img src="../../images/thumb417.jpg" alt="خلفيه" class="banner-img">
+        <div class="overlay">
+            <div class="container">
+                    <h2>تقديم شكوى</h2>
+                    <a href="../../index.html" class="hero-1">الرئيسية ></a>
+                    <a href="../index.html" class="hero">الشكاوى والبلاغات ></a>
+                    <a href="input1.html" class="hero">بيانات الشكوى</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- ************************************************************************************************** -->
+
+    <!-- شريط الخطوات -->
+    <div class="steps">
+        <div class="active">
+            <span class="span1">1</span>
+            <p>بيانات الشكوى</p>
+        </div>
+        <div class="active">
+            <span>2</span>
+            <p>بيانات مقدم الشكوى</p>
+        </div>
+        <div class="active">
+            <span>3</span>
+            <p>المرفقات</p>
+        </div>
+        <div class="active">
+            <span>4</span>
+            <p>بيانات التواصل</p>
+        </div>
+        <div class="active">
+            <span>5</span>
+            <p>تاكيد الارسال</p>
+        </div>
+    </div>
+
+    <!-- ***************************************** -->
+    <div class="form-content">
+        <main class="form">
+            <div class="form-card">
+
+                <div class="form-title">
+                    <h2>بيانات الشكوى</h2>
+                    <span class="bi bi-chat-left-text"></span>
+                </div>
+                <!-- ***************************** -->
+                <div class="form-grid">
+                    <div class="input">
+                        <label>نوع الشكوى*</label>
+                        <select>
+                            <option>اختر نوع الشكوى</option>
+                            <option>تأخير في تقديم الخدمة</option>
+                            <option>سوء معاملة</option>
+                            <option>مخالفة إجراءات</option>
+                            <option>طلب مرفوض بدون سبب</option>
+                            <option>أخرى</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>الجهة المشكو منها*</label>
+                        <select>
+                            <option>اختر الجهة</option>
+                            <option>الأحوال المدنية</option>
+                            <option>البلدية</option>
+                            <option>ادارة المرور</option>
+                            <option>وزارة التربية والتعليم</option>
+                            <option>وزارة الداخلية</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>تاريخ الواقعة*</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="input">
+                        <label>المحافظة*</label>
+                        <select>
+                            <option>اختر المحافظة</option>
+                            <option>صنعاء</option>
+                            <option>عدن</option>
+                            <option>تعز</option>
+                            <option>إب</option>
+                            <option>الحديدة</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>المديرية</label>
+                        <select>
+                            <option>اختر المديرية</option>
+                            <option>الظهار</option>
+                            <option>المشنة</option>
+                            <option>السياني</option>
+                            <option>جبلة</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>رقم المعاملة السابقة (إن وجد)</label>
+                        <input type="text" placeholder="أدخل رقم المعاملة">
+                    </div>
+                    <div class="input">
+                        <label>موضوع الشكوى*</label>
+                        <input type="text" placeholder="أدخل عنوانًا مختصرًا للشكوى" required>
+                    </div>
+                    <div class="input">
+                        <label>تفاصيل الشكوى*</label>
+                        <textarea placeholder="اشرح تفاصيل الشكوى بشكل واضح"></textarea>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="reset" class="cansel"><a href="../index.html">إلغاء</a></button>
+                    <button type="submit" class="next"><a href="input2.html">التالي→</a></button>
+                </div>
+
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="info-card">
+                <h3 class="card-h3"> متطلبات الخدمة</h3>
+                <i class="bi bi-list-check"></i>
+                <br>
+                <br>
+                <hr>
+
+                <ul class="card-ul">
+                    <li>صورة البطاقة الشخصية</li>
+                    <li>المستندات الداعمة للشكوى</li>
+                    <li>تعبئة نموذج الطلب إلكترونياً</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h4>رسوم الخدمة </h4>
+                <p>لا يوجد</p>
+                <div class="button-info-card">
+                    <h5>استعلام عن الشكوى</h5>
+                </div>
+                <hr>
+                <h4>الجهة المقدمة للخدمة</h4>
+                <p>البوابة الحكومية الموحدة</p>
+            </div>
+
+            <div class="help">
+                <h3>مساعدة ❓</h3>
+                <p>
+                    للمساعدة والاستفسار يمكنك التواصل عبر الرقم التالي على مدار الساعة
+                </p>
+                <strong>778208701</strong>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p class="text-footer">جميع الحقوق محفوظة-بوابة الخدمات الحكومية الالكترونية© 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقديم بلاغ - بوابة الخدمات الحكومية الالكترونية</title>
+    <link rel="stylesheet" href="../../bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../css/input1.css">
+</head>
+<body>
+
+    <!-- header الشعار الضغطه و القائمه -->
+    <header class="header">
+        <div class="header-content">
+
+            <div class="header-img-text">
+                <img src="../../images/Yemen.png" alt="شعار الجمهوريه اليمنيه" class="logo">
+                <div class="logo-text">
+                    <h1>بوابة الخدمات الحكومية الالكترونية</h1>
+                    <span>الجمهورية اليمنية</span>
+                </div>
+
+            </div>
+            <div class="actions">
+                <button class="top-login">تسجيل الدخول</button>
+
+            </div>
+
+        </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../../index.html" class="active">الرئيسية</a></li>
+                        <li><a href="../../الاحوال المدنية/main.html">الاحوال المدنية</a></li>
+                        <li><a href="../../البلدية/main2.html">البلدية</a></li>
+                        <li><a href="../../إدارة المرور/الرئيسية.html">ادارة المرور</a></li>
+                        <li><a href="../../وزراة التربية والتعليم/index.html">وزارة التربية والتعليم</a></li>
+                        <li><a href="../../main_index.html">وزارة الداخلية</a></li>
+                        <li><a href="../index.html">الشكاوي</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <!-- ******************************************** -->
+    <section class="banner">
+        <img src="../../images/thumb417.jpg" alt="خلفيه" class="banner-img">
+        <div class="overlay">
+            <div class="container">
+                    <h2>تقديم بلاغ</h2>
+                    <a href="../../index.html" class="hero-1">الرئيسية ></a>
+                    <a href="../index.html" class="hero">الشكاوى والبلاغات ></a>
+                    <a href="input1.html" class="hero">بيانات البلاغ ></a>
+                    <a href="input2.html" class="hero">بيانات مقدم البلاغ</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- ************************************************************************************************** -->
+
+    <!-- شريط الخطوات -->
+    <div class="steps">
+        <div class="active">
+            <span>✔</span>
+            <p>بيانات البلاغ</p>
+        </div>
+        <div class="active">
+            <span class="span1">2</span>
+            <p>بيانات مقدم البلاغ</p>
+        </div>
+        <div class="active">
+            <span>3</span>
+            <p>المرفقات</p>
+        </div>
+        <div class="active">
+            <span>4</span>
+            <p>بيانات التواصل</p>
+        </div>
+        <div class="active">
+            <span>5</span>
+            <p>تاكيد الارسال</p>
+        </div>
+    </div>
+
+    <!-- ***************************************** -->
+    <div class="form-content">
+        <main class="form">
+            <div class="form-card">
+
+                <div class="form-title">
+                    <h2>بيانات مقدم البلاغ</h2>
+                    <span class="bi bi-person"></span>
+                </div>
+                <!-- ***************************** -->
+                <div class="form-grid">
+                    <div class="request-type">
+                        <label style="display:block;font-size:16px;font-weight:bold;margin-bottom:8px;">صفة تقديم البلاغ</label>
+                        <div class="request-cards">
+                            <label class="request-card">
+                                <input type="radio" name="reporter" checked>
+                                <i class="bi bi-person-badge"></i>
+                                <h3>ببيانات معلومة</h3>
+                                <p>تقديم البلاغ مع الإفصاح عن بياناتك</p>
+                            </label>
+                            <label class="request-card">
+                                <input type="radio" name="reporter">
+                                <i class="bi bi-incognito"></i>
+                                <h3>بلاغ سري</h3>
+                                <p>تقديم البلاغ دون الإفصاح عن هويتك</p>
+                            </label>
+                            <label class="request-card">
+                                <input type="radio" name="reporter">
+                                <i class="bi bi-people"></i>
+                                <h3>نيابة عن جهة</h3>
+                                <p>تقديم البلاغ نيابة عن مؤسسة أو جهة</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label>الاسم الرباعي</label>
+                        <input type="text" placeholder="أدخل الاسم الرباعي">
+                    </div>
+                    <div class="input">
+                        <label>رقم البطاقة الشخصية</label>
+                        <input type="text" placeholder="أدخل رقم البطاقة">
+                    </div>
+                    <div class="input">
+                        <label>المحافظة</label>
+                        <select>
+                            <option>اختر المحافظة</option>
+                            <option>صنعاء</option>
+                            <option>عدن</option>
+                            <option>تعز</option>
+                            <option>إب</option>
+                            <option>الحديدة</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>العنوان بالتفصيل</label>
+                        <input type="text" placeholder="أدخل العنوان بالتفصيل">
+                    </div>
+                    <div class="input">
+                        <label>هل أنت طرف في الواقعة؟</label>
+                        <select>
+                            <option>اختر</option>
+                            <option>نعم</option>
+                            <option>لا، شاهد فقط</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>ملاحظات إضافية</label>
+                        <textarea placeholder="أدخل أي ملاحظات إضافية"></textarea>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="reset" class="cansel"><a href="input1.html">←السابق</a></button>
+                    <button type="submit" class="next"><a href="input3.html">التالي→</a></button>
+                </div>
+
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="info-card">
+                <h3 class="card-h3"> متطلبات الخدمة</h3>
+                <i class="bi bi-list-check"></i>
+                <br>
+                <br>
+                <hr>
+
+                <ul class="card-ul">
+                    <li>وصف واضح للواقعة</li>
+                    <li>الأدلة أو الصور الداعمة</li>
+                    <li>تعبئة نموذج الطلب إلكترونياً</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h4>خصوصية البلاغ </h4>
+                <p>يتم التعامل مع بياناتك بسرية تامة ولا يتم الإفصاح عنها</p>
+                <hr>
+                <h4>الجهة المقدمة للخدمة</h4>
+                <p>البوابة الحكومية الموحدة</p>
+            </div>
+
+            <div class="help">
+                <h3>مساعدة ❓</h3>
+                <p>
+                    للطوارئ والبلاغات العاجلة يمكنك الاتصال مباشرة على الرقم التالي
+                </p>
+                <strong>778208701</strong>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p class="text-footer">جميع الحقوق محفوظة-بوابة الخدمات الحكومية الالكترونية© 2026</p>
+    </footer>
+
+</body>
+</html>

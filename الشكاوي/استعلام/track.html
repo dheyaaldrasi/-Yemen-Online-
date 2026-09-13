@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متابعة طلب - بوابة الخدمات الحكومية الالكترونية</title>
+    <link rel="stylesheet" href="../../bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../css/input1.css">
+    <style>
+        /* عناصر خاصة بصفحة متابعة الطلب مبنية على نفس هوية الموقع */
+        .track-wrap{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+            direction: rtl;
+        }
+        .track-search{
+            display: flex;
+            gap: 12px;
+            padding: 25px 30px;
+            flex-wrap: wrap;
+        }
+        .track-search .input{
+            flex: 1;
+            min-width: 220px;
+            margin-bottom: 0;
+        }
+        .track-btn{
+            align-self: flex-end;
+            background: #102f50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 0 30px;
+            height: 40px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .track-btn:hover{ background:#163a66; }
+
+        .status-badge{
+            display: inline-block;
+            background: #e6f4ff;
+            color: #1d64c8;
+            border: 1px solid #b6dbff;
+            border-radius: 20px;
+            padding: 4px 16px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .timeline{
+            list-style: none;
+            padding: 10px 30px 25px;
+            direction: rtl;
+        }
+        .timeline li{
+            position: relative;
+            padding: 0 25px 25px 0;
+            border-right: 2px solid #e1e5ea;
+        }
+        .timeline li:last-child{ border-right: 2px solid transparent; }
+        .timeline li::before{
+            content: "";
+            position: absolute;
+            right: -8px;
+            top: 2px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #cbd2dc;
+        }
+        .timeline li.done::before{ background:#2296e6; }
+        .timeline .t-title{ color:#172b4d; font-weight:bold; font-size:15px; }
+        .timeline .t-date{ color:#667085; font-size:13px; margin-top:4px; }
+        .track-meta{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 25px 30px;
+        }
+        .track-meta .cell label{ display:block; color:#667085; font-size:13px; margin-bottom:5px; }
+        .track-meta .cell span{ color:#172b4d; font-size:15px; font-weight:bold; }
+    </style>
+</head>
+<body>
+
+    <!-- header الشعار الضغطه و القائمه -->
+    <header class="header">
+        <div class="header-content">
+
+            <div class="header-img-text">
+                <img src="../../images/Yemen.png" alt="شعار الجمهوريه اليمنيه" class="logo">
+                <div class="logo-text">
+                    <h1>بوابة الخدمات الحكومية الالكترونية</h1>
+                    <span>الجمهورية اليمنية</span>
+                </div>
+
+            </div>
+            <div class="actions">
+                <button class="top-login">تسجيل الدخول</button>
+
+            </div>
+
+        </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../../index.html" class="active">الرئيسية</a></li>
+                        <li><a href="../../الاحوال المدنية/main.html">الاحوال المدنية</a></li>
+                        <li><a href="../../البلدية/main2.html">البلدية</a></li>
+                        <li><a href="../../إدارة المرور/الرئيسية.html">ادارة المرور</a></li>
+                        <li><a href="../../وزراة التربية والتعليم/index.html">وزارة التربية والتعليم</a></li>
+                        <li><a href="../../main_index.html">وزارة الداخلية</a></li>
+                        <li><a href="../index.html">الشكاوي</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <!-- ******************************************** -->
+    <section class="banner">
+        <img src="../../images/thumb417.jpg" alt="خلفيه" class="banner-img">
+        <div class="overlay">
+            <div class="container">
+                    <h2>متابعة طلب</h2>
+                    <a href="../../index.html" class="hero-1">الرئيسية ></a>
+                    <a href="../index.html" class="hero">الشكاوى والبلاغات ></a>
+                    <a href="track.html" class="hero">متابعة طلب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***************************************** -->
+    <div class="track-wrap">
+
+        <!-- نموذج البحث عن الطلب -->
+        <div class="form-card">
+            <div class="form-title">
+                <h2 style="margin-left:0;">الاستعلام عن حالة الطلب</h2>
+                <span class="bi bi-search"></span>
+            </div>
+            <div class="track-search">
+                <div class="input">
+                    <label>رقم الطلب المرجعي*</label>
+                    <input type="text" placeholder="مثال: CMP-2026-004521">
+                </div>
+                <div class="input">
+                    <label>رقم البطاقة الشخصية / الجوال</label>
+                    <input type="text" placeholder="أدخل رقم البطاقة أو الجوال">
+                </div>
+                <button class="track-btn">استعلام</button>
+            </div>
+        </div>
+
+        <!-- نتيجة الاستعلام -->
+        <div class="form-card" style="margin-top:20px;">
+            <div class="form-title">
+                <h2 style="margin-left:0;">تفاصيل الطلب رقم CMP-2026-004521</h2>
+                <span class="status-badge">قيد المعالجة</span>
+            </div>
+
+            <div class="track-meta">
+                <div class="cell">
+                    <label>نوع الطلب</label>
+                    <span>شكوى</span>
+                </div>
+                <div class="cell">
+                    <label>الجهة المختصة</label>
+                    <span>الأحوال المدنية</span>
+                </div>
+                <div class="cell">
+                    <label>تاريخ التقديم</label>
+                    <span>2026-09-05</span>
+                </div>
+                <div class="cell">
+                    <label>آخر تحديث</label>
+                    <span>2026-09-11</span>
+                </div>
+                <div class="cell">
+                    <label>مقدم الطلب</label>
+                    <span>—</span>
+                </div>
+                <div class="cell">
+                    <label>المدة المتوقعة</label>
+                    <span>3 - 7 أيام عمل</span>
+                </div>
+            </div>
+
+            <hr style="border:none;border-top:1px solid #eee;">
+
+            <!-- المسار الزمني لحالة الطلب -->
+            <ul class="timeline">
+                <li class="done">
+                    <div class="t-title">تم استلام الطلب</div>
+                    <div class="t-date">2026-09-05 — تم تسجيل الطلب وإصدار الرقم المرجعي</div>
+                </li>
+                <li class="done">
+                    <div class="t-title">تم التحقق من البيانات والمرفقات</div>
+                    <div class="t-date">2026-09-07 — اكتملت مراجعة المستندات المرفقة</div>
+                </li>
+                <li class="done">
+                    <div class="t-title">قيد المعالجة لدى الجهة المختصة</div>
+                    <div class="t-date">2026-09-11 — تمت إحالة الطلب إلى الإدارة المعنية</div>
+                </li>
+                <li>
+                    <div class="t-title">إصدار الرد النهائي</div>
+                    <div class="t-date">بانتظار الإنجاز</div>
+                </li>
+            </ul>
+
+            <div class="form-buttons">
+                <button type="button" class="cansel"><a href="../index.html">عودة للخدمات</a></button>
+                <button type="button" class="next"><a href="#">تحميل الإيصال</a></button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="text-footer">جميع الحقوق محفوظة-بوابة الخدمات الحكومية الالكترونية© 2026</p>
+    </footer>
+
+</body>
+</html>
