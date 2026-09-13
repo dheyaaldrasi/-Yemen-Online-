@@ -6,36 +6,57 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>إدارة المرور | إدارة المرور - اليمن</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
+  <!-- header الشعار الضغطه و القائمه -->
   <header class="header">
-    <div class="top">
-      <div class="brand">
-        <div class="logo">🚦</div>
-        <div>
-          <h1>الإدارة العامة للمرور</h1><small>الجمهورية اليمنية — بوابة الخدمات الإلكترونية</small>
+    <div class="header-content">
+
+      <div class="header-img-text">
+        <img src="../images/Yemen.png" alt="شعار الجمهوريه اليمنيه" class="logo">
+        <div class="logo-text">
+          <h1>بوابة الخدمات الحكومية الالكترونية</h1>
+          <span>الجمهورية اليمنية</span>
         </div>
+
       </div>
-      <a class="login" href="#">تسجيل الدخول</a>
+      <div class="actions">
+        <button class="top-login">تسجيل الدخول</button>
+
+      </div>
+
     </div>
     <nav class="nav">
-      <div class="nav-inner"><a class="active" href="/بوابه الخدمات الحكوميه/index.html">الرئيسية</a><a class="" href="الترخيص.html">رخص
-          القيادة</a><a class="" href="المركبة.html">المركبات</a><a class="" href="المخالفات.html">المخالفات</a><a
-          class="" href="لوحات المركبة.html">اللوحات</a><a class="" href="الملكية.html">نقل الملكية</a></div>
+      <ul>
+        <li><a href="../index.html" class="active">الرئيسية</a></li>
+        <li><a href="../الاحوال المدنية/main.html">الاحوال المدنية</a></li>
+        <li><a href="../البلدية/main2.html">البلدية</a></li>
+        <li><a href="../إدارة المرور/الرئيسية.html">ادارة المرور</a></li>
+        <li><a href="../وزراة التربية والتعليم/index.html">وزارة التربية والتعليم</a></li>
+        <li><a href="../main_index.html">وزارة الداخلية</a></li>
+        <li><a href="../الشكاوي/index.html">الشكاوي</a></li>
+      </ul>
     </nav>
   </header>
+  <!-- ******************************************** -->
+  <!-- الصوره والخبر الذي فوقه مع قائمه التنقل الذي داخل الصوره -->
+  <section class="banner">
+    <img src="../images/thumb417.jpg" alt="خلفيه" class="banner-img">
+    <div class="overlay">
+      <div id="container">
+        <h2>تسهيل المعاملات والشكاوي للمواطنين</h2>
+        <p> منصه موحدة لتسهيل المعاملات ومتابعة البلاغات بكل سهولة</p>
+        <a href="../index.html" id="hero-1">الرئيسية</a>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <h2>إدارة المرور</h2>
-      <p>الخدمات الإلكترونية الخاصة برخص القيادة والمركبات والمخالفات واللوحات ونقل الملكية</p>
+      </div>
     </div>
   </section>
+
+
   <main class="container">
     <div class="page-title">
-      <h2>الخدمات المرورية</h2>
-      <p>اختر الخدمة التي تريد تنفيذها</p>
     </div>
     <div class="services">
       <div class="card">
@@ -56,7 +77,8 @@
       <div class="card">
         <div class="icon">🔢</div>
         <h3>اللوحات</h3>
-        <p>خدمات اللوحات الرقمية وطلب بدل فاقد أو تالف ضمن نموذج المشروع.</p><a class="btn" href="لوحات المركبة.html">دخول</a>
+        <p>خدمات اللوحات الرقمية وطلب بدل فاقد أو تالف ضمن نموذج المشروع.</p><a class="btn"
+          href="لوحات المركبة.html">دخول</a>
       </div>
       <div class="card">
         <div class="icon">🔄</div>
@@ -72,10 +94,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-inner">
-      <div><strong>بوابة الخدمات الإلكترونية للمرور</strong><br><small>خدمات مرورية إلكترونية للمواطنين</small></div>
-      <small>© 2026 إدارة المرور — نموذج مشروع ويب</small>
-    </div>
+    <p class="text-footer">جميع الحقوق محفوظة-بوابة الخدمات الحكومية الالكترونية© 2026</p>
   </footer>
 
 </body>

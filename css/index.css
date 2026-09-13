@@ -86,6 +86,14 @@ body{
 
 /* ******************************************************* */
 
+#hero-1{
+    display: inline-block;
+    color: #718096;
+    text-decoration: none;
+    margin-right: 150px;
+    margin-bottom: 15px;
+
+}
 
 
 .banner{
